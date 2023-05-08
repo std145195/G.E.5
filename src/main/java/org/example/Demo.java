@@ -12,11 +12,10 @@ public class Demo {
     }
 
     static void addToList(IGrade graded) {
-        // Προσθέστε κώδικα εδώ
+        gradedStudents.add(graded);
     }
 
     static void filterList(List<IGrade> gradedStudents) {
-        // Προσθέστε κώδικα εδώ }
 
     }
 }
