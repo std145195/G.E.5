@@ -10,7 +10,7 @@ public class Student extends Human implements IGrade{
         super(amka, fullName);
         this.email=email;
         this.department=department;
-        this.average=showAverage();
+        this.average=(float) (Math.round(Math.random()*100.0)/10.0);    //υπολογίζει τον βαθμό του κάθε φοιτητή τυχαία
     }
     public String getEmail() {
         return email;
@@ -32,7 +32,6 @@ public class Student extends Human implements IGrade{
 
     @Override
     public float showAverage() {
-        average = (float) (Math.round(Math.random()*100.0)/10.0);
-        return average;
+        return this.average;    //επιστρέφει τον βαθμό
     }
 }
